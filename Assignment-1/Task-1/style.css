@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'poppins';
+}
+
+.mainBox {
+  height: 95%;
+  width: 80%;
+  border-radius: 30px;
+  background: linear-gradient(to right, #F7C600 60%, #F5E9C9 60%);
+}
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: flex-end;;
+  justify-content: center;
+  padding: 30px;
+
+
+}
+
+.logo img {
+  width: 150px;
+}
+
+.menu span {
+  display: block;
+  width: 35px;
+  height: 2.5px;
+  background: black;
+  margin: 7px 70px;
+  border-radius: 10px;
+}
+
+.content {
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  height: 90%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 60px;
+}
+
+#tagline {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4.5px;
+}
+
+#heading {
+  font-size: 90px;
+}
+
+#discription {
+  font-size: 17px;
+  color: rgb(88, 86, 86);
+}
+
+#date {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 5;
+}
+
+#date span {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  margin-right: 30px;
+  background: black;
+  border-radius: 10px;
+}
+
+.pokeball {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+}
+
+.pokeball img {
+  height: 250px;
+  width: 250px;
+  opacity: 0.15;
+}
+
+.pikachu img {
+  height: auto;
+  width: 700px;
+  margin-bottom: 40px;
+  padding-left: 60px;
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 25px;
+  padding-right: 50px;
+
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #f7c600;
+  border-radius: 50%;
+}
+
+.active {
+  width: 17px;
+  height: 17px;
+  background-color: black;
+}

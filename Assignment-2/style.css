@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(230, 220, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainBox {
+    height: 95%;
+    width: 80%;
+    margin-top: 20px;   
+    border: 2px solid black;
+    border-radius: 35px;
+    background: rgba(255, 255, 255, 0.55);
+    backdrop-filter: blur(10px);
+}
