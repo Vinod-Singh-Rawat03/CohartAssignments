@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: auto;
+  min-height: 100vh;
+  width: 100wh;
+  background-color: #f8f3ed;
+  padding-bottom: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  height: 90px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  height: 100%;
+}
+
+.logo img {
+  height: 80%;
+  width: auto;
+}
+
+.menu {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+}
+
+.menu ul li a {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0%;
+  height: 3px;
+  background-color: green;
+  transition: 0.3s;
+
+  color: green
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+.menu ul li a:hover {
+  color: green;
+}
+
+.searchbarBox {
+  height: 100%;
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  width: 90%;
+  height: 55%;
+  border: 2px solid rgb(146, 144, 144);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.searchbar input {
+  width: 65%;
+  height: 80%;
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgb(146, 144, 144);
+  outline: none;
+  font-size: 14px;
+  padding-left: 5px;
+}
+
+#searchicon {
+  font-size: 20px;
+  color: #dbae0d;
+}
+
+#shoppingicon {
+  font-size: 24px;
+  padding-left: 20px;
+}
+
+.searchbar span {
+  position: relative;
+  bottom: 18pX;
+  left: 15px;
+  background-color: rgb(202, 31, 31);
+  font-size: 15px;
+  border-radius: 10px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.searchbar a {
+  text-decoration: none;
+  color: black;
+}
+
+/* MAIN content */
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.contentBox {
+  height: calc(100% - 90px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.box1 {
+  height: auto;
+  width: 33%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+
+.taglineBox {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.suretyBox {
+  height: 30px;
+  width: 50%;
+  border: 2px solid green;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  color: rgb(87, 187, 11);
+  margin-top: 20px;
+  background-color: rgb(241, 255, 233);
+}
+
+.hero-heading {
+  margin-top: 10px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: #111;
+  text-transform: uppercase;
+}
+
+.hero-heading h1 {
+  font-weight: 400;
+}
+
+.hero-heading span {
+  color: rgb(24, 115, 24);
+}
+
+.taglineBox img {
+  width: 60%;
+  margin-bottom: 10px;
+}
+
+.taglineBox p {
+  color: rgb(161, 157, 157);
+  word-spacing: 2px;
+}
+
+
+.addcartBox {
+  height: 15%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cartIndicator {
+  height: 48px;
+  width: 45%;
+  background-color: black;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  padding-right: 30px;
+}
+
+.cartIcon {
+  height: 70%;
+  width: 20%;
+  border-radius: 30px;
+  background-color: rgb(141, 141, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.itemAddSub {
+  height: 45px;
+  width: 30%;
+  border: 2px solid rgb(192, 188, 188);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.plus {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 800;
+  color: rgb(23, 98, 23);
+}
+
+.number {
+  width: 33%;
+  height: 100%;
+  border-right: 1px solid rgb(169, 169, 169);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+
+.minus {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: 900;
+  border-right: 1px solid rgb(177, 176, 176);
+}
+
+
+
+.charactersticsBox {
+  height: 10%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.natural,
+.oven,
+.tasty {
+  height: 50px;
+  width: 125px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.leaf {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(36, 173, 26);
+  color: rgb(36, 173, 26);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.naturaltext p {
+  font-size: 10px;
+
+}
+
+.fire {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(231, 101, 20);
+  color: rgb(231, 101, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.firetext p {
+  font-size: 10px;
+
+}
+
+.heart {
+  height: 30px;
+  width: 30px;
+  border: 1px solid rgb(173, 28, 26);
+  color: rgb(229, 53, 50);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+}
+
+.hearttext p {
+  font-size: 10px;
+
+}
+
+
+.box2 {
+  height: auto;
+  width: 40%;
+}
+
+.box2 img {
+  height: 600px;
+}
+
+
+.box3 {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 34px;
+  overflow: hidden;
+  font-family: 'Bebas Neue', sans-serif;
+  word-spacing: 1px;
+  letter-spacing: 0.5px;
+}
+
+.flavour-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+}
+
+.flavour-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 34px;
+  top: 72px;
+  height: 35px;
+  border-left: 2px dashed #efbf4b;
+}
+
+.circle {
+  width: 68px;
+  height: 68px;
+  min-width: 68px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle i {
+  font-size: 28px;
+  color: white;
+}
+
+.green {
+  background: #087c45;
+}
+
+.green img {
+  width: 50px;
+  height: 50px;
+}
+
+.red {
+  background: #ed1f36;
+}
+
+.red img {
+  width: 50px;
+  height: 50px;
+}
+
+.yellow {
+  background: #f7b62d;
+}
+
+.yellow img {
+  width: 50px;
+  height: 50px;
+}
+
+.text {
+  width: 210px;
+}
+
+.text h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+.text p {
+  font-size: 14px;
+  line-height: 1.45;
+  color: #666;
+}
+
+
+
+.bottomSection {
+  width: 88%;
+  height: 185px;
+  background-color: #0c7a43;
+  margin: -20px auto  0 auto;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 25px;
+  position: relative;
+  overflow: visible;
+  top: 50px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.flavourSection {
+  width: 180px;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.flavourSection h1 {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.lines {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.lines span {
+  width: 28px;
+  height: 4px;
+  background-color: #f5b92f;
+  border-radius: 20px;
+}
+
+.arrowButtons {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 30px;
+}
+
+.arrowButtons button {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.productCard {
+  width: 300px;
+  height: 130px;
+  background-color: #fff8ef;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  position: relative;
+  overflow: visible;
+}
+
+.productCard img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  top: -28px;
+}
+
+.productText {
+  margin-left: 5px;
+}
+
+.productText h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #f5b92f;
+  font-size: 14px;
+}
+
+.rating span {
+  color: black;
+  margin-left: 5px;
+}
+
+.productText h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.productText button {
+  height: 38px;
+  padding: 0 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #ef233c;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
