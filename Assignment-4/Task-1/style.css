@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 16fr 25fr 18fr 25fr;
+  grid-template-rows: 16fr 24fr 26fr 14fr 20fr;
+  padding: 10px 50px;
+  grid-template-areas:
+    "top-left top-left  top-centre  top-right "
+    "top-left top-left  top-centre  right-Centre "
+    "left-bottom left-centre top-centre right-Centre "
+    "left-bottom left-centre-down right-bottom right-bottom "
+    "left-bottom left-centre-bottom right-bottom right-bottom"
+  ;
+  gap: 10px;
+  padding-right: 130px;
+    padding-left: 130px;
+}
+
+
+.top-left {
+  background-color: #131312;
+  grid-area: top-left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 35px;
+}
+
+.img1 {
+  height: 90%;
+  width: 45%;
+  border-radius: 25px;
+  background-color: rgb(158, 84, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px;
+}
+
+.img1 img {
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.img2 {
+  height: 100%;
+  width: 50%;
+  background-color: #1a1a1c;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.img2 img {
+  height: 90%;
+  width: 75%;
+}
+
+.top-centre {
+  background-color: #1a1a1c;
+  grid-area: top-centre;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+}
+
+.menu {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+
+}
+
+.menu i {
+  font-size: 20px;
+}
+
+.menu p {
+  font-size: 15px;
+}
+
+.menu.auction {
+  background-color: rgb(196, 187, 187);
+  width: 70%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.menu.auction div {
+  height: 40%;
+  width: 10%;
+  border-radius: 20px;
+  background-color: rgb(158, 84, 244);
+}
+
+.line {
+  width: 85%;
+  border-bottom: 1px solid rgb(75, 74, 74);
+}
+
+.top-right {
+  background-color: rgb(158, 84, 244);
+  grid-area: top-right;
+  border-radius: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.smile {
+  height: 40%;
+  width: 40%;
+  border-right: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.smile i {
+  font-size: 40px;
+  color: white;
+}
+
+.smile p {
+  color: rgb(234, 224, 224);
+  font-size: 12px;
+}
+
+.boxicon {
+  height: 50%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.boxicon i {
+  font-size: 40px;
+  color: white;
+}
+
+.boxicon p {
+  color: rgb(234, 224, 224);
+  font-size: 12px;
+}
+
+
+.left-bottom {
+  background-color: black;
+  grid-area: left-bottom;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: 2px solid rgb(228, 237, 85);
+  border-radius: 40px;
+  padding: 0 0 40px 30px ;
+  color: white;
+}
+
+.left-bottom h1 {
+  font-size: 120px;
+  font-weight: 500;
+  letter-spacing: -4px;
+  transform: scaleX(0.76);
+  transform-origin: left;
+  font-family: "Bebas Neue", sans-serif;
+}
+.left-bottom >p {
+  color:rgb(158, 84, 244) ;
+  font-family: "Bebas Neue", sans-serif;
+}
+.dividerline {
+  width: 80%;
+  border-bottom: 1px solid rgb(75, 74, 74);
+}
+.bitcoinDiv {
+  height: 15%;
+  width: 80%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  display: flex; 
+}
+.bitcoinIcon {
+  height: 90%;
+  width: 20%;
+  background: rgb(228, 237, 85);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.bitcoinIcon img {
+  height: 80%;
+}
+.barCode {
+  height: 20%;
+  width: 100%;
+}
+.barCode img {
+  height: 90%;
+  width: 70%;
+}
+
+
+
+.left-centre {
+  background-color: #1a1a1c;
+  grid-area: left-centre;
+  border-radius: 30px;
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.left-centre .location{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  gap: 10px;
+}
+.left-centre h5{
+  color: white;
+  letter-spacing: 1px;
+  line-height:1.5;
+}
+.left-centre p{
+  color: rgb(179, 177, 177);
+  font-size: 10px;
+}
+
+.location span {
+  height: 35px;
+  width: 35px;
+  background-color:rgb(228, 237, 85);
+  padding: 5px;
+  font-size: 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.location p {
+  color: rgb(179, 177, 177);
+  font-size: 10px;
+}
+
+
+
+.left-centre-down {
+  grid-area: left-centre-down;
+  border-radius: 20px;
+  padding: 5PX;
+  font-family: "Roboto", sans-serif;
+}
+
+.medal {
+  background-color: #1a1a1c;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content:space-evenly;
+}
+.medal img{
+  height: 75%;
+  width: 25%;
+}
+.right-Centre {
+  grid-area: right-Centre;
+  padding: 5px 5px 5px 10px;
+  
+}
+.rightImage {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(228, 237, 85);
+  border-radius: 30px;
+  overflow: hidden;
+}
+.rightImage img{
+  height: 100%;
+}
+
+.left-centre-bottom {
+  background-color: rgb(228, 237, 85);
+  grid-area: left-centre-bottom;
+  font-family: "Inter", sans-serif;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  gap:30px;
+  padding: 40px 10px 20px 20px;
+}
+.left-centre-bottom img {
+  height: 80%;
+  width: 20%;
+}
+.appstore {
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+
+}
+
+.appstore #appstoreText{
+  color: rgb(99, 95, 95);
+  font-size: 12px;
+}
+
+.appstore i{
+  position: absolute;
+  padding-left: 140px;
+  font-size: 20px;
+}
+
+
+
+
+.right-bottom {
+  background-color: white;
+  grid-area: right-bottom;
+  border-radius: 30px;
+  display: flex;
+  padding: 30px;
+  font-family: "Inter", sans-serif;
+}
+.bottomText{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.bottomText h3 {
+  font-size: 30px;
+}
+
+.reviewBox{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.ratings{
+  height: 60%;
+  width: 100%;
+  padding-left: 40px;
+}
+.ratings h3 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.ratings i {
+  font-size: 25px;
+  color:rgb(228, 237, 85);
+}
+
+.reviewsbutton {
+  height: 25%;
+  width: 80%;
+  background-color:rgb(158, 84, 244) ;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.reviewsbutton i {
+  font-size: 25px;
+}
