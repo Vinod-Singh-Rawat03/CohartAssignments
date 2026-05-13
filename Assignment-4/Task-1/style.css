@@ -108,15 +108,15 @@ main {
 
 .menu.auction {
   background-color: rgb(196, 187, 187);
-  width: 70%;
+  width: 90%;
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
 }
 
 .menu.auction div {
-  height: 40%;
-  width: 10%;
+  height: 20px;
+  width: 20px;
   border-radius: 20px;
   background-color: rgb(158, 84, 244);
 }
