@@ -233,12 +233,14 @@ header {
 }
 
 .menu-2 {
-    width: 93%;
+    width: 95%;
     display: flex;
     justify-content: space-between; 
     align-items: center;    
     font-family:  system-ui;
-    padding: 10px ;
+    padding: 10
+    
+    px ;
     padding-bottom: 40px;
 }
 .menu-2 .popular {
@@ -288,7 +290,6 @@ header {
     flex-wrap: wrap;
     display: flex;
     justify-content: center;
-    background-color: rgb(199, 221, 240);
     gap: 20px;
     
 }
@@ -296,7 +297,6 @@ header {
 .box {
   min-height: calc(100%/4);
   width:calc(90%/4);
-  background-color: orange;
   
 }
 .box img {
@@ -310,8 +310,146 @@ header {
     width: 100%;
     border-radius: 20px;   
 }
-.box div {
+.box .details {
     height: 30px;
     width: 100%;
-    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.box .details .profile {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.box .details img {
+    height: 25px;
+    width: 25px;
+}
+.box .details .status {
+    height: 20px ;
+    width: 40px;
+    background-color: rgb(152, 148, 148);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.box .details .likeViews {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: grey;
+}
+
+.bottomSignup {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bottomSignup .button {
+    height: 60%;
+    width: 14%;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.section-3{
+  width: 100%;
+  padding: 60px 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainLogodiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.logo-track {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  animation: moveLogos 15s linear infinite;
+}
+
+.logo-track img {
+  height: 80px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+@keyframes moveLogos {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60%);
+  }
+}
+
+.bottomMenu {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 0;
+}
+.bottomLogo img {
+    height: 70px;
+}
+.opportunities {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    font-family:  system-ui;
+    font-weight: 500;
+    font-size: 16px;
+}
+.social {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+}
+footer {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    font-family:  system-ui;
+    font-size: 13px;
+}
+footer .footer-div1 {
+    display: flex;
+    gap: 20px;
+    color: rgb(161, 161, 170);
+}
+footer .footer-div2{
+    display: flex;
+    gap: 20px;
+    color: rgb(161, 161, 170);
 }
